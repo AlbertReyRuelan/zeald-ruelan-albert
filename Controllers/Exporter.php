@@ -110,7 +110,7 @@ class Exporter {
         extract($vars);
       }
       try {
-        include("views".DIRECTORY_SEPARATOR.$fileDir.".php");
+        include("Views".DIRECTORY_SEPARATOR.$fileDir.".php");
       } catch (\Exception $e) {
         throw new \Exception("Unknown file '$fileDir'");      
       }
